@@ -11,16 +11,12 @@ Source1: COPYING
 BuildArch: noarch
 Provides:  kde-settings = %{version}-%{release}
 
+Requires: horizon-themes
+
 BuildRequires: kde-filesystem
 # ssh-agent.service
 BuildRequires: systemd-rpm-macros
 Source10: ssh-agent.sh
-
-%if ! 0%{?bootstrap}
-# for f33+ , consider merging version_maj with version, ie, use Version: 33 --rex
-%global  version_maj %(echo %{version} | cut -d. -f1)
-BuildRequires: f%{version_maj}-backgrounds-kde
-%endif
 
 # when kdebugrc was moved here
 Conflicts: kf5-kdelibs4support < 5.7.0-3
