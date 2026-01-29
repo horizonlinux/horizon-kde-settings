@@ -88,13 +88,11 @@ if [ %{_prefix} != /usr ] ; then
    popd
 fi
 
-cp -p %{SOURCE1} .
+rm -rf %{buildroot}/horizon-kde-settings.spec
+rm -rf %{buildroot}/COPYING
+rm -rf %{buildroot}/ssh-agent.sh
 
-# default wallpaper symlink
-%if 0%{?version_maj:1}
-mkdir -p %{buildroot}%{_datadir}/wallpapers
-ln -s F%{version_maj} %{buildroot}%{_datadir}/wallpapers/Fedora
-%endif
+cp -p %{SOURCE1} .
 
 %if 0%{?rhel} && 0%{?rhel} < 9
 # for rhel 8 and older with older noto fonts
