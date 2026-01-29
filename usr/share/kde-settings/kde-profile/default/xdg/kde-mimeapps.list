@@ -1,0 +1,70 @@
+# This file contains Fedora overrides over the KDE defaults
+# found at /usr/share/applications/kde-mimeapps.list
+
+[Default Applications]
+# Packages
+application/x-rpm=org.kde.discover.desktop
+application/vnd.debian.binary-package=org.kde.ark.desktop
+
+# Browser
+x-scheme-handler/http=org.mozilla.firefox.desktop
+x-scheme-handler/https=org.mozilla.firefox.desktop
+application/xhtml+xml=org.mozilla.firefox.desktop
+text/html=org.mozilla.firefox.desktop
+
+# Video Player
+application/x-extension-m4a=org.videolan.VLC.desktop
+application/x-extension-mp4=org.videolan.VLC.desktop
+application/x-flac=org.videolan.VLC.desktop
+application/x-matroska=org.videolan.VLC.desktop
+application/x-netshow-channel=org.videolan.VLC.desktop
+application/x-quicktime-media-link=org.videolan.VLC.desktop
+application/x-quicktimeplayer=org.videolan.VLC.desktop
+application/x-smil=org.videolan.VLC.desktop
+video/3gp=org.videolan.VLC.desktop
+video/3gpp2=org.videolan.VLC.desktop
+video/3gpp=org.videolan.VLC.desktop
+video/avi=org.videolan.VLC.desktop
+video/divx=org.videolan.VLC.desktop
+video/dv=org.videolan.VLC.desktop
+video/fli=org.videolan.VLC.desktop
+video/flv=org.videolan.VLC.desktop
+video/mp2t=org.videolan.VLC.desktop
+video/mp4=org.videolan.VLC.desktop
+video/mp4v-es=org.videolan.VLC.desktop
+video/mpeg=org.videolan.VLC.desktop
+video/msvideo=org.videolan.VLC.desktop
+video/ogg=org.videolan.VLC.desktop
+video/quicktime=org.videolan.VLC.desktop
+video/vivo=org.videolan.VLC.desktop
+video/vnd.divx=org.videolan.VLC.desktop
+video/vnd.mpegurl=org.videolan.VLC.desktop
+video/vnd.rn-realvideo=org.videolan.VLC.desktop
+video/vnd.vivo=org.videolan.VLC.desktop
+video/webm=org.videolan.VLC.desktop
+video/x-anim=org.videolan.VLC.desktop
+video/x-avi=org.videolan.VLC.desktop
+video/x-flc=org.videolan.VLC.desktop
+video/x-flic=org.videolan.VLC.desktop
+video/x-fli=org.videolan.VLC.desktop
+video/x-flv=org.videolan.VLC.desktop
+video/x-m4v=org.videolan.VLC.desktop
+video/x-matroska=org.videolan.VLC.desktop
+video/x-mpeg2=org.videolan.VLC.desktop
+video/x-mpeg=org.videolan.VLC.desktop
+video/x-ms-asf=org.videolan.VLC.desktop
+video/x-msvideo=org.videolan.VLC.desktop
+video/x-ms-wm=org.videolan.VLC.desktop
+video/x-ms-wmv=org.videolan.VLC.desktop
+video/x-ms-wmx=org.videolan.VLC.desktop
+video/x-ms-wvx=org.videolan.VLC.desktop
+video/x-nsv=org.videolan.VLC.desktop
+video/x-ogm+ogg=org.videolan.VLC.desktop
+video/x-ogm=org.videolan.VLC.desktop
+video/x-theora+ogg=org.videolan.VLC.desktop
+video/x-theora=org.videolan.VLC.desktop
+x-content/video-blueray=org.videolan.VLC.desktop
+x-content/video-dvd=org.videolan.VLC.desktop
+x-content/video-hddvd=org.videolan.VLC.desktop
+x-content/video-svcd=org.videolan.VLC.desktop
+x-content/video-vcd=org.videolan.VLC.desktop
