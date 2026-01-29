@@ -51,6 +51,24 @@ Requires: google-noto-sans-mono-fonts
 %description plasma
 %{summary}.
 
+# FIXME/TODO: can probably consider dropping this subpkg now that we
+# have good comps and soft dependencies support -- rex
+%package pulseaudio
+Summary: Enable pulseaudio support in KDE
+# nothing here to license
+License: LicenseRef-Not-Copyrightable
+Requires: %{name} = %{version}-%{release}
+Provides: kde-settings-pulseaudio = %{version}-%{release}
+%if 0%{?rhel} && 0%{?rhel} < 9
+Requires: pulseaudio
+%else
+Requires: pulseaudio-daemon
+%endif
+## legacy apps
+Requires: (pipewire-alsa if pipewire-pulseaudio)
+Requires: (alsa-plugins-pulseaudio if pulseaudio)
+%description pulseaudio
+%{summary}.
 
 %package sddm
 Summary: Configuration files for sddm
@@ -142,6 +160,8 @@ install -p -m644 -D %{SOURCE10} %{buildroot}%{_sysconfdir}/xdg/plasma-workspace/
 %endif
 %{_sysconfdir}/xdg/plasma-workspace/env/ssh-agent.sh
 
+%files pulseaudio
+# nothing, this is a metapackage
 
 %files sddm
 %{_prefix}/lib/sddm/sddm.conf.d/kde_settings.conf
