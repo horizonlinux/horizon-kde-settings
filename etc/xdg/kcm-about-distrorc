@@ -1,2 +1,2 @@
 [General]
-LogoPath=/usr/share/pixmaps/system-logo-white.png
+UseOSReleaseVersion=true
