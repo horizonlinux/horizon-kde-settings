@@ -1,7 +1,7 @@
 Summary: Config files for KDE
 Name:    horizon-kde-settings
 Version: 42.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 License: MIT
 URL:     https://github.com/horizonlinux/horizon-kde-settings
