@@ -1,7 +1,7 @@
 Summary: Config files for KDE
 Name:    horizon-kde-settings
 Version: 42.1
-Release: 2%{?dist}
+Release: 3%{?dist}
 
 License: MIT
 URL:     https://github.com/horizonlinux/horizon-kde-settings
@@ -138,6 +138,7 @@ install -p -m644 -D %{SOURCE10} %{buildroot}%{_sysconfdir}/xdg/plasma-workspace/
 %{_prefix}/lib/rpm/plasma4.req
 %{_prefix}/lib/rpm/fileattrs/plasma4.attr
 %{_datadir}/polkit-1/rules.d/11-fedora-kde-policy.rules
+%{_datadir}/kde-settings/kde-profile/default
 %endif
 %config(noreplace) %{_sysconfdir}/xdg/kcm-about-distrorc
 %config(noreplace) %{_sysconfdir}/xdg/kdebugrc
@@ -147,17 +148,11 @@ install -p -m644 -D %{SOURCE10} %{buildroot}%{_sysconfdir}/xdg/plasma-workspace/
 # drop noreplace, so we can be sure to get the new kiosk bits
 %config %{_sysconfdir}/kderc
 %config %{_sysconfdir}/kde4rc
-%if 0%{?rhel} && 0%{?rhel} <= 7
-%exclude %{_datadir}/kde-settings/kde-profile/default/share/apps/plasma-desktop/init/00-defaultLayout.js
-%endif
 
 %files plasma
 %{_sysconfdir}/xdg/plasma-workspace/env/env.sh
 %{_sysconfdir}/xdg/plasma-workspace/env/gtk2_rc_files.sh
 %{_sysconfdir}/xdg/plasma-workspace/env/gtk3_scrolling.sh
-%if 0%{?version_maj:1}
-%{_datadir}/wallpapers/Fedora
-%endif
 %{_sysconfdir}/xdg/plasma-workspace/env/ssh-agent.sh
 
 %files pulseaudio
@@ -171,5 +166,8 @@ install -p -m644 -D %{SOURCE10} %{buildroot}%{_sysconfdir}/xdg/plasma-workspace/
 %config(noreplace) %{_sysconfdir}/Trolltech.conf
 
 %changelog
+* Sat Jan 31 2026 Marcel Mrówka
+- Update package, to fix missing files.
+
 * Thu Jan 29 2026 Marcel Mrówka
 - Create package
