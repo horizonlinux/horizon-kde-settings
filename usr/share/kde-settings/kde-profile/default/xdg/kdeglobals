@@ -9,6 +9,8 @@ toolBarFont=Noto Sans,9,-1,5,50,0,0,0,0,0
 Theme=breeze
 
 [KDE]
+DefaultDarkLookAndFeel=io.github.horizonlinux.HorizonDark
+DefaultLightLookAndFeel=io.github.horizonlinux.HorizonLight
 LookAndFeelPackage=io.github.horizonlinux.HorizonLight
 SingleClick=false
 ColorScheme=BreezeLight
