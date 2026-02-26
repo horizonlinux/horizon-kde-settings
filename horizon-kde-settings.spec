@@ -1,7 +1,7 @@
 Summary: Config files for KDE
 Name:    horizon-kde-settings
-Version: 42.1
-Release: 3%{?dist}
+Version: 43.0
+Release: 1%{?dist}
 
 License: MIT
 URL:     https://github.com/horizonlinux/horizon-kde-settings
@@ -166,6 +166,9 @@ install -p -m644 -D %{SOURCE10} %{buildroot}%{_sysconfdir}/xdg/plasma-workspace/
 %config(noreplace) %{_sysconfdir}/Trolltech.conf
 
 %changelog
+* Thu Feb 26 2026 Marcel Mrówka <micro.mail88@gmail.com>
+- Update for Plasma 6.6
+
 * Sat Jan 31 2026 Marcel Mrówka
 - Update package, to fix missing files.
 
