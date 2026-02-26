@@ -5,7 +5,7 @@ Release: 1%{?dist}
 
 License: MIT
 URL:     https://github.com/horizonlinux/horizon-kde-settings
-Source0: https://github.com/horizonlinux/horizon-kde-settings/archive/refs/tags/42.1.tar.gz
+Source0: https://github.com/horizonlinux/horizon-kde-settings/archive/refs/tags/43.0.tar.gz
 Source1: COPYING
 
 BuildArch: noarch
